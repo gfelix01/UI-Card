@@ -10,30 +10,32 @@ export default function ProfessionalCard() {
   const linkedinUrl = "https://www.linkedin.com/in/arturo-felix/";
 
   return (
-    <Card className="w-full max-w-md bg-gray-900 text-gray-100 shadow-2xl rounded-lg transform transition-transform duration-300 hover:scale-105">
-      <CardHeader className="flex flex-row items-center gap-4 p-6 border-b border-gray-700">
+    <Card className="w-full max-w-md mx-auto bg-gray-900 text-gray-100 shadow-2xl rounded-lg transform transition-transform duration-300 hover:scale-105">
+      <CardHeader className="flex flex-col md:flex-row items-center gap-4 p-6 border-b border-gray-700">
         <Avatar className="w-24 h-24 border-2 border-blue-400 rounded-full shadow-lg">
           <AvatarImage src="/Eltury.png" alt="Gabriel Arturo Felix Paez" />
           <AvatarFallback>GAF</AvatarFallback>
         </Avatar>
-        <div>
-          <h2 className="text-3xl font-bold text-white">Gabriel Arturo Felix Paez</h2>
-          <p className="text-blue-500 text-lg">Desarrollador de Software</p>
+        <div className="text-center md:text-left w-full">
+          <h2 className="text-xl md:text-2xl font-bold text-white truncate">
+            Gabriel Arturo Felix Paez
+          </h2>
+          <p className="text-blue-500 text-base md:text-lg">Desarrollador de Software</p>
         </div>
       </CardHeader>
-      <CardContent className="grid gap-6 p-6">
-        <div className="flex justify-between items-center">
+      <CardContent className="grid gap-4 p-6">
+        <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="grid gap-3">
             <div className="flex items-center gap-2">
               <Mail className="w-5 h-5 text-blue-400" />
-              <span className="text-sm">Gabrielarturo0221@gmail.com</span>
+              <span className="text-sm break-all">Gabrielarturo0221@gmail.com</span>
             </div>
             <div className="flex items-center gap-2">
               <Phone className="w-5 h-5 text-blue-400" />
-              <span className="text-sm">809-919-0625</span>
+              <span className="text-sm break-all">809-919-0625</span>
             </div>
           </div>
-          <div className="p-2 bg-gray-800 rounded-lg shadow-lg">
+          <div className="p-2 bg-gray-800 rounded-lg shadow-lg mt-4 md:mt-0">
             <QRCode value={portfolioUrl} size={90} />
           </div>
         </div>
