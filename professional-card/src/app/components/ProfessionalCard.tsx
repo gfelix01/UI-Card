@@ -40,12 +40,12 @@ export default function ProfessionalCard() {
           </div>
         </div>
         <div className="flex justify-center gap-6 mt-4">
-          <a href={linkedinUrl} target="_blank" rel="noopener noreferrer">
+          <a href={linkedinUrl} target="_blank" rel="noopener noreferrer" title="LinkedIn">
             <Button variant="outline" size="icon" className="bg-gray-800 hover:bg-gray-700 rounded-full transition-all duration-300 hover:shadow-lg">
               <Linkedin className="w-5 h-5 text-blue-400" />
             </Button>
           </a>
-          <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+          <a href={githubUrl} target="_blank" rel="noopener noreferrer" title="GitHub">
             <Button variant="outline" size="icon" className="bg-gray-800 hover:bg-gray-700 rounded-full transition-all duration-300 hover:shadow-lg">
               <Github className="w-5 h-5 text-blue-400" />
             </Button>
