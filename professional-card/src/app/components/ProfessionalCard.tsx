@@ -5,7 +5,7 @@ import { Button } from "@/app/components/ui/button";
 import { Github, Linkedin, Mail, Phone } from "lucide-react";
 
 export default function ProfessionalCard() {
-  const portfolioUrl = "https://portafolio-phi-ruddy-34.vercel.app/";
+  const portfolioUrl = "https://gfelix.tech/";
   const githubUrl = "https://github.com/gfelix01"; 
   const linkedinUrl = "https://www.linkedin.com/in/arturo-felix/";
 
