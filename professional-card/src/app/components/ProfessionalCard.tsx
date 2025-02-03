@@ -10,7 +10,7 @@ export default function ProfessionalCard() {
   const linkedinUrl = "https://www.linkedin.com/in/arturo-felix/";
 
   return (
-    <Card className="w-full max-w-md mx-auto bg-gray-900 text-gray-100 shadow-2xl rounded-lg transform transition-transform duration-300 hover:scale-105">
+    <Card className="w-full max-w-md mx-auto bg-gray-900 text-gray-100 shadow-2xl rounded-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
       <CardHeader className="flex flex-col sm:flex-row items-center gap-4 p-4 sm:p-6 border-b border-gray-700">
         <Avatar className="w-24 h-24 border-2 border-blue-400 rounded-full shadow-lg">
           <AvatarImage src="/Eltury.png" alt="Gabriel Arturo Felix Paez" />
